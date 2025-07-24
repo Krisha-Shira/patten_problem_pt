@@ -5,9 +5,11 @@ public class Class1
     // Method to swap values using ref keyword
     static void Swap(ref int a, ref int b)
     {
-        int temp = a;
-        a = b;
-        b = temp;
+        //int temp = a;
+        //a = b;
+        //b = temp;
+        (a,b) = (b,a);
+
     }
 
     public static void Main(string[] args)
