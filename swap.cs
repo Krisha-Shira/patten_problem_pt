@@ -2,8 +2,8 @@
 
 public class Class1
 {
-    
-    static void Swap( int a,  int b)
+    // Method to swap values using ref keyword
+    static void Swap(ref int a, ref int b)
     {
         int temp = a;
         a = b;
@@ -15,7 +15,7 @@ public class Class1
         int a = 10, b = 20;
         Console.WriteLine("Before the swap: a = {0} and b = {1}", a, b);
 
-        Swap( a, b); 
+        Swap(ref a, ref b); // Pass variables by reference
 
         Console.WriteLine("After the swap: a = {0} and b = {1}", a, b);
     }
